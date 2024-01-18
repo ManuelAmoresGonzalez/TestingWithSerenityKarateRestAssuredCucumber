@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/manuel.amores/Desktop/TestingWithSerenity">
+        <classes>
+            <class name="restassured.RestAssuredTest">
+                <methods>
+                    <include name="getData"/>
+                    <include name="createPost"/>
+                </methods>
+            </class>
+            <class name="serenity.CountriesSearchStepsTests">
+                <methods>
+                    <include name="verifyThatWeCanFindUnitedStatesOfAmericaCountryUsingTheCodeUs"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
